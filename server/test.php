@@ -29,8 +29,8 @@
         <h1>Données de température et humidité de la pièce </h1>
     <?php
         // Open a files
-        $fileTemp = fopen("temperature.csv", "r");
-        $fileHum = fopen("humidity.csv", "r");
+        $fileTemp = fopen("/home/pi/temperature-wireless/temperature.csv", "r");
+        $fileHum = fopen("/home/pi/temperature-wireless/humidity.csv", "r");
 
         echo '<div class="wrapper">';
             echo '<div class="gauche">';
