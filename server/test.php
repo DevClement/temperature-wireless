@@ -7,7 +7,8 @@
                 font-family: Tahoma, sans-serif;
             }
             table {
-                align-self: center;
+                margin: 0 auto;
+                margin-top: 25px;
             }
             .wrapper{
                 display: flex;
