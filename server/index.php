@@ -1,7 +1,7 @@
 <?php 
 
-$tempCsvFile = file("/home/pi/temperature-wireless/temperature.csv");
-$humidCsvFile = file("/home/pi/temperature-wireless/humidity.csv");
+$tempCsvFile = fopen("/home/pi/temperature-wireless/temperature.csv", "r");
+$humidCsvFile = fopen("/home/pi/temperature-wireless/humidity.csv", "r");
 $datasTemp = [];
 $datasHumid = [];
 
