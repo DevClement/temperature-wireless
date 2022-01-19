@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<center>
-    <head>
-        <style>
-            h1 {color:red;}
-            table {color:blue;}
-
-        </style>
-    </head>
-
-        <h1>Température et humidité</h1>
 
     <?php
     echo "<html><body><table>\n\n";
@@ -45,4 +34,22 @@
     fclose($fileTemp);
     fclose($fileHum);
     echo "\n</table></center></body></html>";
+
+    $dataPoints = [];
+    function getDataPointsFromCSV($csv){
+        $dataPoints = $csvLines = $points = array();
+         $csvLines = preg_split("/[\r?\n|\r|\n]+/", $csv);
+        for ($i = 0; $i < sizeof($csvLines); $i++){
+            if (strlen($csvLines[$i]) > 0) {
+                $points = explode($csvLines[$i], ",");
+                $x= floatval($points[0]);
+                $y= floatval($points[1]);
+                array_push($dataPoints,$x,$y);
+            }
+        }
+        return $dataPoints;
+    }
+
+    var_dump($dataPoints)
+    
     ?>

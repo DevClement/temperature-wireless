@@ -27,3 +27,4 @@ elif str(sys.argv[1]) == 'humidity':
     else:
         print('Err.')
         sys.exit(1)
+
