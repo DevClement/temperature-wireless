@@ -27,4 +27,7 @@ function date_heure(id)
         setTimeout('date_heure("'+id+'");','1000');
         return true;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1d4c0fe860e227aa4ccbc7aeec5fc0a9c94a890b

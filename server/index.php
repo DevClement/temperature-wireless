@@ -66,6 +66,7 @@ foreach ($datasHumid as $data){
                 </dl>
             </div>
 
+<<<<<<< HEAD
         </div>
         <div class="section"></div>
     </div>
@@ -79,3 +80,4 @@ foreach ($datasHumid as $data){
     </div>
 </body>
 </html>
+
