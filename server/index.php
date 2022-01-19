@@ -1,7 +1,7 @@
 <?php 
 
-$tempCsvFile = file("/home/pi/temperature-wireless/temperature.csv");
-$humidCsvFile = file("/home/pi/temperature-wireless/humidity.csv");
+$tempCsvFile = file("../assets/temperature.csv");
+$humidCsvFile = file("../assets/humidity.csv");
 $datasTemp = [];
 $datasHumid = [];
 
@@ -53,7 +53,7 @@ foreach ($datasHumid as $data){
             <div class="info-block">
                 <dl>
                     <dt>Température en Celcius </dt>
-                    <meter low="10" high="30" max="50" value=<? echo $temperature; ?>>B</meter>
+                    <meter low="10" high="30" max="50" value=<?php echo $temperature; ?>>B</meter>
                     <dd><?php echo $temperature.' °C'; ?></dd>
                 </dl>
             </div>
