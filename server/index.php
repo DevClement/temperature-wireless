@@ -12,6 +12,7 @@ foreach ($tempCsvFile as $line) {
 foreach ($datasTemp as $data){
     $temperature = $data[1];
 }
+echo $temperature;
 
 foreach ($humidCsvFile as $line) {
     $datasHumid[] = str_getcsv($line);
@@ -20,6 +21,8 @@ foreach ($humidCsvFile as $line) {
 foreach ($datasHumid as $data){
     $humidity = $data[1];
 }
+
+echo $humidity;
 ?>
 <!DOCTYPE html>
 
