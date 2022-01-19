@@ -20,33 +20,3 @@ foreach ($humidCsvFile as $line) {
 foreach ($datasHumid as $data){
     $humidity = $data[1];
 }
-
-
-
-
-/*foreach ($datas as $data){
-    $time = $data[0];
-    echo $time;
-}
-
-foreach ($datas as $data){
-    $temperature = $data[1];
-    echo $temperature;
-}
-
-if ($temperature) {
-    echo "Temperature is ${temperature}C\n";
-} else {
-    echo "Unable to get temperature\n";
-}*/
-
-
-
-
-/*
-result of datas
-array(555) { 
-    [0]=> array(2) { 
-        [0]=> string(13) "1642427403000" [1]=> string(4) "21.0" 
-    }
-}*/
