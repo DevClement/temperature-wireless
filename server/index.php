@@ -65,8 +65,6 @@ foreach ($datasHumid as $data){
                     <dd><?php echo $humidity.' %'; ?></dd>
                 </dl>
             </div>
-
-<<<<<<< HEAD
         </div>
         <div class="section"></div>
     </div>
