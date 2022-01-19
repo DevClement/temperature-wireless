@@ -1,4 +1,4 @@
-@import "compass/css3";
+
  html {
 	 height: 100%;
 }
@@ -28,7 +28,7 @@
 	 height: 350px;
 	 color: #fff;
 	 background: #55bc75;
-	 background-image: linear-gradient(color-stops(#55bc75, #55bc75 50%, #4daf7c 50%));
+
 }
  .section-graph .graph-info {
 	 z-index: 99;
@@ -151,8 +151,7 @@
 	transform-origin: center top;
 	transition: all 1.3s ease-in-out;
   }
-  
-  .jauge-container:hover .gauge-c {  transform:rotate(.25turn)};
+
   
   
   #percent { color: white; }
@@ -189,7 +188,7 @@
   
   .warn {
 	font-size: 0.8em;
-	background-color: darken(orange, 15%);
+
 	color: #fff;
 	padding: 10px;
   }
