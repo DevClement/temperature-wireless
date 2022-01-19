@@ -1,0 +1,196 @@
+@import "compass/css3";
+ html {
+	 height: 100%;
+}
+ body {
+	 background-color: black;
+	 background-size: 13px, 29px, 37px, 53px;
+}
+ .container {
+	 width: 500px;
+	 margin: 0 auto;
+	border-style: solid;
+	border-color: white;
+	border-radius: 5px;
+	background-color: black;
+}
+ .widget {
+	 background: white;
+	 border-radius: 5px;
+	 box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+}
+ .section:first-child {
+	 border-radius: 5px 5px 0 0;
+}
+/* * Graph section */
+ .section-graph {
+	 position: relative;
+	 height: 350px;
+	 color: #fff;
+	 background: #55bc75;
+	 background-image: linear-gradient(color-stops(#55bc75, #55bc75 50%, #4daf7c 50%));
+}
+ .section-graph .graph-info {
+	 z-index: 99;
+	 position: absolute;
+	 font-weight: bold;
+	 margin-top: 18px;
+	 margin-left: 21px;
+	 width: 100px;
+}
+ .section-graph .graph-info .graph-arrow {
+	 width: 0;
+	 height: 0;
+	 margin-top: 18px;
+	 border-left: 4px solid transparent;
+	 border-right: 4px solid transparent;
+	 border-bottom: 4px solid white;
+	 float: left;
+}
+ .section-graph .graph-info .graph-info-big {
+	 font-size: 24px;
+	 float: left;
+	 margin-left: 3px;
+}
+ .section-graph .graph-info .graph-info-small {
+	 margin-left: 3px;
+	 font-size: 12px;
+	 font-weight: normal;
+	 color: rgba(255, 255, 255, .5);
+	 clear: left;
+	 margin-left: 8px;
+}
+/* * Info Section */
+ h3 {
+	 font-size: 18px;
+	 margin-top: 2px;
+}
+ h4 {
+	 font-size: 13px;
+	 font-weight: normal;
+	 margin-bottom: 10px;
+}
+ .section-info {
+	 padding: 21px 21px 41px;
+	 color: #8a786a;
+	 overflow: hidden;
+}
+ .info-time {
+	 font-size: 12px;
+}
+ .info-block {
+	 background-color: #f5f0ec;
+	 text-align: center;
+	 width: 220px;
+	 border-radius: 3px;
+	 float: left;
+	 padding: 4px 0;
+	 align-content: center;
+}
+ .info-block.last {
+	 margin-left: 1px;
+	 float: right;
+    align-content: center;
+    width: 220px;
+}
+ .info-block dt, .info-block dd {
+	 margin: 0;
+	 padding: 0;
+}
+ .info-block dt {
+	 font-weight: bold;
+}
+ .info-block dd {
+	 font-size: 12px;
+}
+
+/*Jauge*/
+.jauge-container {
+	width: 400px;
+	height: 200px;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	overflow: hidden;
+	text-align: center;
+	transform: translate(-50%, -50%);
+  }
+  
+  .gauge-a {
+	z-index: 1;
+	position: absolute;
+	background-color: rgba(255,255,255,.2);
+	width: 400px;
+	height: 200px;
+	top: 0%;
+	border-radius: 250px 250px 0px 0px;
+  }
+  
+  .gauge-b {
+	z-index: 3;
+	position: absolute;
+	background-color: #222;
+	width: 250px;
+	height: 125px;
+	top: 75px;
+	margin-left: 75px;
+	margin-right: auto;
+	border-radius: 250px 250px 0px 0px;
+  }
+  
+  .gauge-c {
+	z-index: 2;
+	position: absolute;
+	background-color: #ff9900;
+	width: 400px;
+	height: 200px;
+	top: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 0px 0px 200px 200px;
+	transform-origin: center top;
+	transition: all 1.3s ease-in-out;
+  }
+  
+  .jauge-container:hover .gauge-c {  transform:rotate(.25turn)};
+  
+  
+  #percent { color: white; }
+  
+  .gauge-data {
+	z-index: 4;
+	color: rgba(255,255,255,.2);
+	font-size: 1.5em;
+	line-height: 25px;
+	position: absolute;
+	width: 400px;
+	height: 200px;
+	top: 90px;
+	margin-left: auto;
+	margin-right: auto;
+	transition: all 1s ease-out;
+  }
+
+  body {
+	background-color: rgba(0,0,0,0.8);
+	color: #999;
+	font-family: Hevletica, sans-serif;
+  }
+  
+  .info {
+	clear: both;
+	padding: 10px;
+	font-size: 0.9em;
+  }
+  a.link {
+	color: rgb(47, 227, 255);
+	text-decoration: none;
+  }
+  
+  .warn {
+	font-size: 0.8em;
+	background-color: darken(orange, 15%);
+	color: #fff;
+	padding: 10px;
+  }
+  
