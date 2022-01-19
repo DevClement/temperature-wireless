@@ -1,7 +1,5 @@
 
 <!DOCTYPE html>
-
-<<<<<<< HEAD
 <head>
     <style>
         h1 {
@@ -30,7 +28,6 @@
     </style>
 </head>
 <h1>Données de température et humidité de la pièce </h1>
-=======
     <head>
         <style>
             h1 {
@@ -59,7 +56,6 @@
         </style>
     </head>
         <h1>Données de température et humidité de la pièce </h1>
->>>>>>> 1d4c0fe860e227aa4ccbc7aeec5fc0a9c94a890b
     <?php
         // Open a files
         $fileTemp = fopen("/home/pi/temperature-wireless/temperature.csv", "r");
@@ -81,8 +77,6 @@
                     }
                 echo "</table>";
             echo '</div>';
-
-<<<<<<< HEAD
         foreach ($data as $j) {
             echo "<td>" . htmlspecialchars($j)
                 . "</td>";
@@ -94,24 +88,6 @@
     fclose($fileHum);
     echo "\n</table></center></body></html>";
 
-    $dataPoints = [];
-    function getDataPointsFromCSV($csv){
-        $dataPoints = $csvLines = $points = array();
-         $csvLines = preg_split("/[\r?\n|\r|\n]+/", $csv);
-        for ($i = 0; $i < sizeof($csvLines); $i++){
-            if (strlen($csvLines[$i]) > 0) {
-                $points = explode($csvLines[$i], ",");
-                $x= floatval($points[0]);
-                $y= floatval($points[1]);
-                array_push($dataPoints,$x,$y);
-            }
-        }
-        return $dataPoints;
-    }
-
-    var_dump($dataPoints)
-    
-=======
             echo '<div class="droite">';
                 echo "<table>";
                     echo"Humidité";
@@ -130,5 +106,4 @@
         echo '</div>';
         // Closing the files
         fclose($fileHum);
->>>>>>> 1d4c0fe860e227aa4ccbc7aeec5fc0a9c94a890b
     ?>
